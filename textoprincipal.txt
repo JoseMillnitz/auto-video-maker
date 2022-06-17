@@ -1,0 +1,34 @@
+estava sumido, por questoes de eu estar preparando um bot, um que pudesse ler e pesquisar para mim as coisas
+isso nao e incrivel, so tenho que colocar, muitas, mas muitas, muitas mesmo, tipo, um googleplex, de virgulas
+mas isso a gente coloca, enfim, mudando para o video
+tudo comecou com, um print, com uma definicao, e então, eu ja nao sabia mais
+isso e praticamente, programacao em python, voce importa um negocio, nem sabe se funciona, mas recomendaram, no stackoverflow, por volta de 2009
+entao voce le, a documentacao, e nao entende nada, e entao voce abandona, volta pro, stackoverflow, e voce copia codigos, de 2016, por que sao os dos anos mais proximos
+adapta, com alguns tutoriais, no youtube, de um a dois anos atras, por que sao os mais recentes, e apos algumas semanas, voce figura como ler, a documentacao no caso
+e entao, reescreve todo seu codigo, e taran, tudo esta funcionando, ou mais ou menos assim, e então voce começa, a ter logica, reestrutura tudo, faz algo que funcione
+descubra que, sempre usar, if and elifs, nem sempre sao a melhor opcao, bata a cabeca, coloque como baixa prioridade, entupa o codigo, faca outros projetos
+importe mais coisas, entupa seu computador, aprenda ambientes, esqueca seus projetos antigos, nao publique os novos, exato, nao use github, pule git
+volte, reconstrua seu, primeiro projeto, ainda nao use github, crie um projeto, anuncie na internet
+esse eh, meu projeto pessoal, atual, criar videos com, texto para fala, pesquise alguma coisa no google, e misture tudo, taran, projeto meio ok
+sejam benvindos, esse canal ja era, automatizado, caso voce tenha visto, os ultimos, flow silenciocast, foram todos feitos, com jumpcutter do carykh
+entao, para nao ficar muito atras, eu criei esse bot, ele pesquisa e fala, incrivel nao, a verdade e que, eu gostaria de deixar, o mais robotico possivel
+sim, por que isso adiciona, na minha opniao, uma camada de humor, olhe isso cara, e um robo falando de si mesmo, nao e comico
+e estarei publicando, o codigo, para quem quiser usar, apenas windows, infelizmente, por que uso, voz do windows, e fiz pensando primeiro, bem voce sabe, uso pessoal
+mas irei adicionar, lentamente, o codigo, para enquanto postar, revisar, e construir uma documentacao, claro, ja tenho uma mental, mas a mente nao e eterna
+e tambem, colocarei o texto, que usei para fazer esse video, como base para o github
+tem algumas, anotacoes interessantes, como eu me baseei, na voz do windows, para alterar, voce tem que baixar, uma nova lingua, e autorizar ela no, regedit
+o que e meio perigoso, mas essas coisas, como dev, voce acaba fazendo, lembrese de seu primeiro archlinux, e do segundo, terceiro, e assim vai, sempre e diferente
+voce aprende ambientes, ou envs, apenas pra isso poxa, claro que voce deve, entender que e necessario, alterar o regedit para, um projeto pessoal ne
+e um processo, que voce pode encontrar aqui
+https://www.ghacks.net/2018/08/11/unlock-all-windows-10-tts-voices-system-wide-to-get-more-of-them/
+e aqui
+https://support.microsoft.com/en-us/topic/how-to-download-text-to-speech-languages-for-windows-10-d5a6b612-b3ae-423f-afa5-4f6caf1ec5d3, sim ele leu tudo
+ou era para ele ler, por favor, leia tts, ou vou ter que adicionar isso, na descricao, e estou com preguica, embora eu va adiconar da mesma forma, links na descricao
+apos isso, voce coloca seu tts, no arquivo, tiatts, e seria isso, modificar o textoprincipal, e sair se divertindo
+criei tambem, scripts para apagar a bagunça, que isso faz uma bagunça enorme, e entao, um para rodar tudo, e um para limpar tudo, ou em teoria, deveriam fazer isso
+esqueci de avisar, a dependencia, simple image download, ela tem que ser a exata versao, se nao, ela nao funciona como previsto, pelo menos nesse atual, mas isso e facil
+se voce esta, em um ambiente python, e apenas fazer download do requisites.txt, facil nao, eu tambem achei, agora vou fazer outra coisa, sao onze da noite, e gastei semanas, para apenas isso
+onde esta toda a criatividade, no trabalho eu exalo criatividade, em casa sou vagabundo, nao queria que fosse assim
+espero que tenham gostado, se voce chegou ate aqui, e vai testar o programa, que tal dar um gostei, ou se inscrever as vezes, quem sabe, vai que eu atualizo, dentro dos proximos dois anos
+e isso, eu prometo que, na proxima, serei mais criativo, e conseguirei criar um texto, satisfatorio, boa noite william booner, bom dia brasil, boa tarde vo gertrudes, boa madrugada jo soares
+um forte abraço, estilo urso, e espero ver voces na proxima, com a voz mais robotica possivel
