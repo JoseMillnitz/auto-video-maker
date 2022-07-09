@@ -25,13 +25,13 @@ from posixpath import split
 import ffmpeg
 import pathlib
 import re
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 import random
 import subprocess
 import shutil
 
 currentpath = pathlib.Path(__file__).parent.resolve()
-the_images_path = r"C:\Users\pentaedro\Documents\testedownload\estranho\enverio\simple_images"
+the_images_path = rf"{currentpath}\simple_images"
 
 #variaveis globais
 #criando uma lista para armazenar o tempo de cada audio
@@ -146,13 +146,18 @@ findtext()
 #e depois jogar o video no diretorio "edited_images"
 def makeimg():
     global the_images_path
+    global currentpath
     global valid_images_formats
     global escrita
     global tempos
+    myFont = ImageFont.truetype('font/Helvetica.ttf', 80)
     countbase = 0
     temposcount = 1
-    savepath = r"C:\Users\pentaedro\Documents\testedownload\estranho\enverio\edited_images"
-    os.mkdir(savepath) 
+    savepath = rf"{currentpath}\edited_images"
+    try:
+        os.mkdir(savepath) 
+    except:
+        print("already exists")
     #encontra as imagens na lista "escrita"
     for words in escrita:
         backgroundimage = Image.new("RGBA", (3840,2160), "#00FF00FF")
@@ -197,6 +202,8 @@ def makeimg():
                 #esse valor deve ser alterado toda vez que altera a quantidade de imagens, sendo o valor determinado por (imagens pesquisadas -1)
                 elif countbase == 4:
                     editim.paste(im, (randomX, randomY))
+                    d1 = ImageDraw.Draw(editim)
+                    d1.text((1920, 1944), f'{words}', font=myFont, fill =(255, 252, 2), stroke_width=2, stroke_fill=(0, 0, 0), anchor = "md")
                     tempsave = os.path.join(savepath, f"imagem_final_{temposcount}")
                     editim.save(f"{tempsave}.png", "PNG")
                     countbase = 0
@@ -218,8 +225,8 @@ def merge_all():
     global tempos
     #variaveis
     contagemdetempos = 1
-    final_image_path = r"C:\Users\pentaedro\Documents\testedownload\estranho\enverio\edited_images"
-    final_audio_path = r"C:\Users\pentaedro\Documents\testedownload\estranho\enverio\textolido"
+    final_image_path = rf"{currentpath}\edited_images"
+    final_audio_path = rf"{currentpath}\textolido"
     #eu usei a lista de tempos para definir o loop principal da função
     for x in tempos:
         #arrendondando
@@ -252,7 +259,7 @@ def merge_all():
         subprocess.call('ffmpeg -f concat -safe 0 -i essascoisas.txt -vsync cfr -pix_fmt yuv420p output.mp4', shell=True)
         subprocess.call('ffmpeg -f concat -safe 0 -i audiolocations.txt -vsync cfr -pix_fmt yuv420p output.wav', shell=True)
         subprocess.call('ffmpeg -i output.mp4 -i output.wav -c:v copy -c:a aac final_output.mp4', shell=True)
-        shutil.move(r"C:\Users\pentaedro\Documents\testedownload\estranho\enverio\final_output.mp4", r"C:\Users\pentaedro\Documents\testedownload\estranho\enverio\video\final_output.mp4")
+        shutil.move(rf"{currentpath}\final_output.mp4", rf"{currentpath}\video\final_output.mp4")
     
         
 
