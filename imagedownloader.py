@@ -35,9 +35,14 @@ for say in f:
         say = say.replace("\\", "")
         say = say.replace("//", "")
         say = say.replace('"', "")
-        response().download(say, 7)
+        response().download(say, 8)
+        #print(say)
         #i dont know why but i had to add this to make it work, its not a good idea to use this, but i dont know how to fix it except for this way
         #thank you windows for doing things hard
+        
+        #this next one is because its annoying me how some accents of other languages (like portuguese) are being replaced by variations of "ã"
+
+
         #and also google for the next part
         #i want delete the first and second downloaded image
         #i want to split the string everytime there is a , in a for loop
@@ -55,8 +60,10 @@ for say in f:
                 newword = re.sub(r'_', ' ', wordpath)
                 os.remove(f"{currentpath}/simple_images/{wordpath}/{newword}_1.png")
                 os.remove(f"{currentpath}/simple_images/{wordpath}/{newword}_2.png")
+                os.remove(f"{currentpath}/simple_images/{wordpath}/{newword}_3.png")
             else:
                 word = word.strip()
                 word1 = word.replace(" ", "_")
                 os.remove(f"{currentpath}/simple_images/{word1}/{word}_1.png")
                 os.remove(f"{currentpath}/simple_images/{word1}/{word}_2.png")
+                os.remove(f"{currentpath}/simple_images/{word1}/{word}_3.png")
