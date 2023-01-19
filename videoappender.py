@@ -258,8 +258,10 @@ def merge_all():
         #usei cfr por conta que vfr estava dando alguns erros de compatibilidade
         subprocess.call('ffmpeg -f concat -safe 0 -i essascoisas.txt -vsync cfr -pix_fmt yuv420p output.mp4', shell=True)
         subprocess.call('ffmpeg -f concat -safe 0 -i audiolocations.txt -vsync cfr -pix_fmt yuv420p output.wav', shell=True)
-        subprocess.call('ffmpeg -i output.mp4 -i output.wav -c:v copy -c:a aac final_output.mp4', shell=True)
-        shutil.move(rf"{currentpath}\final_output.mp4", rf"{currentpath}\video\final_output.mp4")
+        subprocess.call('ffmpeg -i output.mp4 -i output.wav -c:v copy -c:a aac final.mp4', shell=True)
+        subprocess.call('python fastcut.py --input_file final.mp4', shell=True)
+        shutil.move(rf"{currentpath}\final.mp4", rf"{currentpath}\video\final.mp4")
+        shutil.move(rf"{currentpath}\final_ALTERED.mp4", rf"{currentpath}\video\final_ALTERED.mp4")
     
         
 
